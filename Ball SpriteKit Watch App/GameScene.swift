@@ -127,8 +127,8 @@ class GameScene: SKScene, ObservableObject, SKPhysicsContactDelegate{
             player.position.x = 150
         }
         
-        if ball.position.y > frame.midY{
-            let playerComputerMove = SKAction.moveTo(x: ball.position.x, duration: 0.2)
+        if ball.position.y > frame.midY {
+            let playerComputerMove = SKAction.moveTo(x: ball.position.x, duration: 0.1)
             playerComputer.run(playerComputerMove)
         }
     }
@@ -161,28 +161,47 @@ class GameScene: SKScene, ObservableObject, SKPhysicsContactDelegate{
                 championLabel.zPosition = 15
                 addChild(championLabel)
                 
+                let winTextLabel = SKLabelNode()
+                winTextLabel.text = "You Win"
+                winTextLabel.fontSize = 25
+                winTextLabel.fontColor = .orange
+                winTextLabel.position = CGPoint(x: size.width / 2, y: size.height / 2 - 30)
+                winTextLabel.zPosition = 15
+                addChild(winTextLabel)
+                
                 ballNode.removeFromParent()
                 
                 //make a new ball
-                DispatchQueue.main.asyncAfter(deadline: .now() + 3){
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2){
                     championLabel.removeFromParent()
+                    winTextLabel.removeFromParent()
                     self.makeNewBall()
                 }
                 
             }else if yPos <= otherNode.frame.minY + 2{
 //                computerScore += 1
 //                computerScoreLabel.text = "\(computerScore)"
+                
                 let loseLabel = SKLabelNode()
                 loseLabel.text = "❌"
                 loseLabel.position = CGPoint(x: size.width / 2, y: size.height / 2)
                 loseLabel.zPosition = 15
                 addChild(loseLabel)
+                
+                let loseTextLabel = SKLabelNode()
+                loseTextLabel.text = "You Lose"
+                loseTextLabel.fontSize = 25
+                loseTextLabel.fontColor = .red
+                loseTextLabel.position = CGPoint(x: size.width / 2, y: size.height / 2 - 30)
+                loseTextLabel.zPosition = 15
+                addChild(loseTextLabel)
 
                 ballNode.removeFromParent()
                 
                 //make a new ball
-                DispatchQueue.main.asyncAfter(deadline: .now() + 3){
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2){
                     loseLabel.removeFromParent()
+                    loseTextLabel.removeFromParent()
                     self.makeNewBall()
                 }
             }
@@ -219,6 +238,6 @@ class GameScene: SKScene, ObservableObject, SKPhysicsContactDelegate{
         ball.physicsBody?.collisionBitMask = bitMaks.frame.rawValue | bitMaks.player.rawValue
         
         addChild(ball)
-        ball.physicsBody?.applyImpulse(CGVector(dx: speedXBall, dy: speedYBall))
+        ball.physicsBody?.applyImpulse(CGVector(dx: 0.3, dy: 0.3))
     }
 }
