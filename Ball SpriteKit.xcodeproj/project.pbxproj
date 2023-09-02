@@ -1,0 +1,533 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A14E81FD2AA20DDB0004F046 /* Ball_SpriteKitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14E81FC2AA20DDB0004F046 /* Ball_SpriteKitApp.swift */; };
+		A14E81FF2AA20DDB0004F046 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14E81FE2AA20DDB0004F046 /* ContentView.swift */; };
+		A14E82012AA20DDC0004F046 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A14E82002AA20DDC0004F046 /* Assets.xcassets */; };
+		A14E82042AA20DDC0004F046 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A14E82032AA20DDC0004F046 /* Preview Assets.xcassets */; };
+		A14E820A2AA20DDC0004F046 /* Ball SpriteKit Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A14E82092AA20DDC0004F046 /* Ball SpriteKit Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A14E820F2AA20DDC0004F046 /* Ball_SpriteKitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14E820E2AA20DDC0004F046 /* Ball_SpriteKitApp.swift */; };
+		A14E82112AA20DDC0004F046 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14E82102AA20DDC0004F046 /* ContentView.swift */; };
+		A14E82132AA20DDD0004F046 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A14E82122AA20DDD0004F046 /* Assets.xcassets */; };
+		A14E82162AA20DDD0004F046 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A14E82152AA20DDD0004F046 /* Preview Assets.xcassets */; };
+		A14E82232AA20EB70004F046 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14E82222AA20EB70004F046 /* GameScene.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A14E820B2AA20DDC0004F046 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A14E81F12AA20DDB0004F046 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A14E82082AA20DDC0004F046;
+			remoteInfo = "Ball SpriteKit Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A14E821C2AA20DDD0004F046 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A14E820A2AA20DDC0004F046 /* Ball SpriteKit Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A14E81F92AA20DDB0004F046 /* Ball SpriteKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ball SpriteKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A14E81FC2AA20DDB0004F046 /* Ball_SpriteKitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ball_SpriteKitApp.swift; sourceTree = "<group>"; };
+		A14E81FE2AA20DDB0004F046 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A14E82002AA20DDC0004F046 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A14E82032AA20DDC0004F046 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A14E82092AA20DDC0004F046 /* Ball SpriteKit Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ball SpriteKit Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A14E820E2AA20DDC0004F046 /* Ball_SpriteKitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ball_SpriteKitApp.swift; sourceTree = "<group>"; };
+		A14E82102AA20DDC0004F046 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A14E82122AA20DDD0004F046 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A14E82152AA20DDD0004F046 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A14E82222AA20EB70004F046 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A14E81F62AA20DDB0004F046 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A14E82062AA20DDC0004F046 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A14E81F02AA20DDB0004F046 = {
+			isa = PBXGroup;
+			children = (
+				A14E81FB2AA20DDB0004F046 /* Ball SpriteKit */,
+				A14E820D2AA20DDC0004F046 /* Ball SpriteKit Watch App */,
+				A14E81FA2AA20DDB0004F046 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A14E81FA2AA20DDB0004F046 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A14E81F92AA20DDB0004F046 /* Ball SpriteKit.app */,
+				A14E82092AA20DDC0004F046 /* Ball SpriteKit Watch App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A14E81FB2AA20DDB0004F046 /* Ball SpriteKit */ = {
+			isa = PBXGroup;
+			children = (
+				A14E81FC2AA20DDB0004F046 /* Ball_SpriteKitApp.swift */,
+				A14E81FE2AA20DDB0004F046 /* ContentView.swift */,
+				A14E82002AA20DDC0004F046 /* Assets.xcassets */,
+				A14E82022AA20DDC0004F046 /* Preview Content */,
+			);
+			path = "Ball SpriteKit";
+			sourceTree = "<group>";
+		};
+		A14E82022AA20DDC0004F046 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A14E82032AA20DDC0004F046 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A14E820D2AA20DDC0004F046 /* Ball SpriteKit Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				A14E820E2AA20DDC0004F046 /* Ball_SpriteKitApp.swift */,
+				A14E82102AA20DDC0004F046 /* ContentView.swift */,
+				A14E82222AA20EB70004F046 /* GameScene.swift */,
+				A14E82122AA20DDD0004F046 /* Assets.xcassets */,
+				A14E82142AA20DDD0004F046 /* Preview Content */,
+			);
+			path = "Ball SpriteKit Watch App";
+			sourceTree = "<group>";
+		};
+		A14E82142AA20DDD0004F046 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A14E82152AA20DDD0004F046 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A14E81F82AA20DDB0004F046 /* Ball SpriteKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A14E821D2AA20DDD0004F046 /* Build configuration list for PBXNativeTarget "Ball SpriteKit" */;
+			buildPhases = (
+				A14E81F52AA20DDB0004F046 /* Sources */,
+				A14E81F62AA20DDB0004F046 /* Frameworks */,
+				A14E81F72AA20DDB0004F046 /* Resources */,
+				A14E821C2AA20DDD0004F046 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A14E820C2AA20DDC0004F046 /* PBXTargetDependency */,
+			);
+			name = "Ball SpriteKit";
+			productName = "Ball SpriteKit";
+			productReference = A14E81F92AA20DDB0004F046 /* Ball SpriteKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A14E82082AA20DDC0004F046 /* Ball SpriteKit Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A14E82192AA20DDD0004F046 /* Build configuration list for PBXNativeTarget "Ball SpriteKit Watch App" */;
+			buildPhases = (
+				A14E82052AA20DDC0004F046 /* Sources */,
+				A14E82062AA20DDC0004F046 /* Frameworks */,
+				A14E82072AA20DDC0004F046 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Ball SpriteKit Watch App";
+			productName = "Ball SpriteKit Watch App";
+			productReference = A14E82092AA20DDC0004F046 /* Ball SpriteKit Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A14E81F12AA20DDB0004F046 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					A14E81F82AA20DDB0004F046 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					A14E82082AA20DDC0004F046 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = A14E81F42AA20DDB0004F046 /* Build configuration list for PBXProject "Ball SpriteKit" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A14E81F02AA20DDB0004F046;
+			productRefGroup = A14E81FA2AA20DDB0004F046 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A14E81F82AA20DDB0004F046 /* Ball SpriteKit */,
+				A14E82082AA20DDC0004F046 /* Ball SpriteKit Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A14E81F72AA20DDB0004F046 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A14E82042AA20DDC0004F046 /* Preview Assets.xcassets in Resources */,
+				A14E82012AA20DDC0004F046 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A14E82072AA20DDC0004F046 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A14E82162AA20DDD0004F046 /* Preview Assets.xcassets in Resources */,
+				A14E82132AA20DDD0004F046 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A14E81F52AA20DDB0004F046 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A14E81FF2AA20DDB0004F046 /* ContentView.swift in Sources */,
+				A14E81FD2AA20DDB0004F046 /* Ball_SpriteKitApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A14E82052AA20DDC0004F046 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A14E82232AA20EB70004F046 /* GameScene.swift in Sources */,
+				A14E82112AA20DDC0004F046 /* ContentView.swift in Sources */,
+				A14E820F2AA20DDC0004F046 /* Ball_SpriteKitApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A14E820C2AA20DDC0004F046 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A14E82082AA20DDC0004F046 /* Ball SpriteKit Watch App */;
+			targetProxy = A14E820B2AA20DDC0004F046 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A14E82172AA20DDD0004F046 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A14E82182AA20DDD0004F046 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		A14E821A2AA20DDD0004F046 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Ball SpriteKit Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = VW59CHPRG8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Ball SpriteKit";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.alphauzi.Ball-SpriteKit";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alphauzi.Ball-SpriteKit.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Debug;
+		};
+		A14E821B2AA20DDD0004F046 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Ball SpriteKit Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = VW59CHPRG8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Ball SpriteKit";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.alphauzi.Ball-SpriteKit";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alphauzi.Ball-SpriteKit.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Release;
+		};
+		A14E821E2AA20DDD0004F046 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Ball SpriteKit/Preview Content\"";
+				DEVELOPMENT_TEAM = VW59CHPRG8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Ball SpriteKit";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alphauzi.Ball-SpriteKit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A14E821F2AA20DDD0004F046 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Ball SpriteKit/Preview Content\"";
+				DEVELOPMENT_TEAM = VW59CHPRG8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Ball SpriteKit";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alphauzi.Ball-SpriteKit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A14E81F42AA20DDB0004F046 /* Build configuration list for PBXProject "Ball SpriteKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A14E82172AA20DDD0004F046 /* Debug */,
+				A14E82182AA20DDD0004F046 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A14E82192AA20DDD0004F046 /* Build configuration list for PBXNativeTarget "Ball SpriteKit Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A14E821A2AA20DDD0004F046 /* Debug */,
+				A14E821B2AA20DDD0004F046 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A14E821D2AA20DDD0004F046 /* Build configuration list for PBXNativeTarget "Ball SpriteKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A14E821E2AA20DDD0004F046 /* Debug */,
+				A14E821F2AA20DDD0004F046 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A14E81F12AA20DDB0004F046 /* Project object */;
+}
