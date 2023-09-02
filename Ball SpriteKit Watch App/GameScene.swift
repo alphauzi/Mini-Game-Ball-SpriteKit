@@ -16,12 +16,10 @@ class GameScene: SKScene, ObservableObject, SKPhysicsContactDelegate{
     
     var playerPosX: Double = 0
     
-    var playerScore = 0
-    var playerScoreLabel = SKLabelNode()
-    var computerScore = 0
-    var computerScoreLabel = SKLabelNode()
-    
-    var championLabel = SKLabelNode()
+//    var playerScore = 0
+//    var playerScoreLabel = SKLabelNode()
+//    var computerScore = 0
+//    var computerScoreLabel = SKLabelNode()
     
     var speedXBall = 0.3
     var speedYBall = 0.3
@@ -102,17 +100,19 @@ class GameScene: SKScene, ObservableObject, SKPhysicsContactDelegate{
         frame.contactTestBitMask = bitMaks.ball.rawValue
         frame.collisionBitMask = bitMaks.ball.rawValue
         
-        playerScoreLabel.position = CGPoint(x: size.width / 3, y: size.height / 2)
-        playerScoreLabel.zPosition = 10
-        playerScoreLabel.fontColor = .red
-        playerScoreLabel.text = "\(playerScore)"
-        addChild(playerScoreLabel)
+//        playerScoreLabel.position = CGPoint(x: size.width / 3, y: size.height / 2)
+//        playerScoreLabel.zPosition = 10
+//        playerScoreLabel.fontColor = .red
+//        playerScoreLabel.text = "\(playerScore)"
+//        addChild(playerScoreLabel)
+//
+//        computerScoreLabel.position = CGPoint(x: size.width / 1.5, y: size.height / 2)
+//        computerScoreLabel.zPosition = 10
+//        computerScoreLabel.fontColor = .red
+//        computerScoreLabel.text = "\(computerScore)"
+//        addChild(computerScoreLabel)
+
         
-        computerScoreLabel.position = CGPoint(x: size.width / 1.5, y: size.height / 2)
-        computerScoreLabel.zPosition = 10
-        computerScoreLabel.fontColor = .red
-        computerScoreLabel.text = "\(computerScore)"
-        addChild(computerScoreLabel)
         
     }
     
@@ -152,20 +152,37 @@ class GameScene: SKScene, ObservableObject, SKPhysicsContactDelegate{
             //ball hit the frame
             
             if yPos >= otherNode.frame.maxY - 2{
-                playerScore += 1
-                playerScoreLabel.text = "\(playerScore)"
+//                playerScore += 1
+//                playerScoreLabel.text = "\(playerScore)"
+                
+                let championLabel = SKLabelNode()
+                championLabel.text = "🏆"
+                championLabel.position = CGPoint(x: size.width / 2, y: size.height / 2)
+                championLabel.zPosition = 15
+                addChild(championLabel)
+                
                 ballNode.removeFromParent()
+                
                 //make a new ball
-                DispatchQueue.main.asyncAfter(deadline: .now() + 2){
+                DispatchQueue.main.asyncAfter(deadline: .now() + 3){
+                    championLabel.removeFromParent()
                     self.makeNewBall()
                 }
                 
             }else if yPos <= otherNode.frame.minY + 2{
-                computerScore += 1
-                computerScoreLabel.text = "\(computerScore)"
+//                computerScore += 1
+//                computerScoreLabel.text = "\(computerScore)"
+                let loseLabel = SKLabelNode()
+                loseLabel.text = "❌"
+                loseLabel.position = CGPoint(x: size.width / 2, y: size.height / 2)
+                loseLabel.zPosition = 15
+                addChild(loseLabel)
+
                 ballNode.removeFromParent()
+                
                 //make a new ball
-                DispatchQueue.main.asyncAfter(deadline: .now() + 2){
+                DispatchQueue.main.asyncAfter(deadline: .now() + 3){
+                    loseLabel.removeFromParent()
                     self.makeNewBall()
                 }
             }
