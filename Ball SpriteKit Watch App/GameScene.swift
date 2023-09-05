@@ -22,7 +22,6 @@ class GameScene: SKScene, ObservableObject, SKPhysicsContactDelegate{
 //    var computerScoreLabel = SKLabelNode()
     
     var speedXBall = 0.3
-    var speedYBall = 0.3
     
     enum bitMaks: UInt32{
         case ball = 0b1
@@ -90,7 +89,7 @@ class GameScene: SKScene, ObservableObject, SKPhysicsContactDelegate{
         ball.physicsBody?.collisionBitMask = bitMaks.frame.rawValue | bitMaks.player.rawValue
         
         addChild(ball)
-        ball.physicsBody?.applyImpulse(CGVector(dx: speedXBall, dy: speedYBall))
+        ball.physicsBody?.applyImpulse(CGVector(dx: 0.3, dy: 0.3))
         
         let frame = SKPhysicsBody(edgeLoopFrom: self.frame)
         frame.friction = 0
@@ -239,5 +238,7 @@ class GameScene: SKScene, ObservableObject, SKPhysicsContactDelegate{
         
         addChild(ball)
         ball.physicsBody?.applyImpulse(CGVector(dx: 0.3, dy: 0.3))
+        
+        speedXBall = 0.3
     }
 }
