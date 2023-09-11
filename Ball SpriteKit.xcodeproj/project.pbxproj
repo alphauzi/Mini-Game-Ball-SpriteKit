@@ -17,6 +17,8 @@
 		A14E82132AA20DDD0004F046 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A14E82122AA20DDD0004F046 /* Assets.xcassets */; };
 		A14E82162AA20DDD0004F046 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A14E82152AA20DDD0004F046 /* Preview Assets.xcassets */; };
 		A14E82232AA20EB70004F046 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14E82222AA20EB70004F046 /* GameScene.swift */; };
+		A14E82292AA72A000004F046 /* StartScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = A14E82282AA72A000004F046 /* StartScene.sks */; };
+		A1FFD6C72AA9FB2000D28B72 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FFD6C62AA9FB2000D28B72 /* GameScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		A14E82122AA20DDD0004F046 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A14E82152AA20DDD0004F046 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A14E82222AA20EB70004F046 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		A14E82282AA72A000004F046 /* StartScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StartScene.sks; sourceTree = "<group>"; };
+		A1FFD6C62AA9FB2000D28B72 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 			children = (
 				A14E81FC2AA20DDB0004F046 /* Ball_SpriteKitApp.swift */,
 				A14E81FE2AA20DDB0004F046 /* ContentView.swift */,
+				A1FFD6C62AA9FB2000D28B72 /* GameScene.swift */,
+				A14E82282AA72A000004F046 /* StartScene.sks */,
 				A14E82002AA20DDC0004F046 /* Assets.xcassets */,
 				A14E82022AA20DDC0004F046 /* Preview Content */,
 			);
@@ -213,6 +219,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A14E82292AA72A000004F046 /* StartScene.sks in Resources */,
 				A14E82042AA20DDC0004F046 /* Preview Assets.xcassets in Resources */,
 				A14E82012AA20DDC0004F046 /* Assets.xcassets in Resources */,
 			);
@@ -234,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1FFD6C72AA9FB2000D28B72 /* GameScene.swift in Sources */,
 				A14E81FF2AA20DDB0004F046 /* ContentView.swift in Sources */,
 				A14E81FD2AA20DDB0004F046 /* Ball_SpriteKitApp.swift in Sources */,
 			);
