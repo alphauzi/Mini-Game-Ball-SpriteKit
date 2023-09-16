@@ -18,6 +18,7 @@
 		A14E82162AA20DDD0004F046 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A14E82152AA20DDD0004F046 /* Preview Assets.xcassets */; };
 		A14E82232AA20EB70004F046 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14E82222AA20EB70004F046 /* GameScene.swift */; };
 		A14E82292AA72A000004F046 /* StartScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = A14E82282AA72A000004F046 /* StartScene.sks */; };
+		A1EEE5A12AAFB74100E1E572 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EEE5A02AAFB74100E1E572 /* GameOverScene.swift */; };
 		A1FFD6C72AA9FB2000D28B72 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FFD6C62AA9FB2000D28B72 /* GameScene.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		A14E82152AA20DDD0004F046 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A14E82222AA20EB70004F046 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		A14E82282AA72A000004F046 /* StartScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StartScene.sks; sourceTree = "<group>"; };
+		A1EEE5A02AAFB74100E1E572 /* GameOverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
 		A1FFD6C62AA9FB2000D28B72 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +105,7 @@
 				A14E81FC2AA20DDB0004F046 /* Ball_SpriteKitApp.swift */,
 				A14E81FE2AA20DDB0004F046 /* ContentView.swift */,
 				A1FFD6C62AA9FB2000D28B72 /* GameScene.swift */,
+				A1EEE5A02AAFB74100E1E572 /* GameOverScene.swift */,
 				A14E82282AA72A000004F046 /* StartScene.sks */,
 				A14E82002AA20DDC0004F046 /* Assets.xcassets */,
 				A14E82022AA20DDC0004F046 /* Preview Content */,
@@ -243,6 +246,7 @@
 			files = (
 				A1FFD6C72AA9FB2000D28B72 /* GameScene.swift in Sources */,
 				A14E81FF2AA20DDB0004F046 /* ContentView.swift in Sources */,
+				A1EEE5A12AAFB74100E1E572 /* GameOverScene.swift in Sources */,
 				A14E81FD2AA20DDB0004F046 /* Ball_SpriteKitApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -454,8 +458,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -487,8 +491,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

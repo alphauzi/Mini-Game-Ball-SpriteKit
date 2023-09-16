@@ -15,3 +15,11 @@ struct Ball_SpriteKitApp: App {
         }
     }
 }
+
+//motionManager.startAccelerometerUpdates()
+//motionManager.accelerometerUpdateInterval = 0.1
+//motionManager.startAccelerometerUpdates(to: OperationQueue.main ) {
+//    (data, error) in
+//    
+//    self.physicsWorld.gravity = CGVectorMake(CGFloat((data?.acceleration.x)!) * 1, 0)
+//}
