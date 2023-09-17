@@ -114,17 +114,17 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
     }
     
     override func update(_ currentTime: TimeInterval) {
-        camp.position.y = player.position.y + 250
+        camp.position.y = player.position.y + 300
         if (player.physicsBody?.velocity.dy)! > 0{
             gameOverLine.position.y = player.position.y - 400
         }
         
-        if let accelerometerData = motionManager.accelerometerData {
+        if let accelerometerData = motionManager.accelerometerData, isFirstTouch == true {
             let accelerationX = CGFloat(accelerometerData.acceleration.x)
             //                        let accelerationY = CGFloat(accelerometerData.acceleration.y)
             
             //            playerAcceleration = CGVector(dx: accelerationX * 1000, dy: 0)
-            player.position.x += accelerationX * 1000 * CGFloat(0.1)
+            player.position.x += accelerationX * 250 * CGFloat(0.1)
             
             let minX = player.size.width / 2
             let maxX = size.width - player.size.width / 2
@@ -187,7 +187,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
     
     func makePlatform(){
         let platform = SKSpriteNode(imageNamed: "Rectangle")
-        platform.position = CGPoint(x: GKRandomDistribution(lowestValue: 70, highestValue: 350).nextInt(), y: GKRandomDistribution(lowestValue: 140, highestValue: 200).nextInt() + Int(player.position.y))
+        platform.position = CGPoint(x: GKRandomDistribution(lowestValue: 70, highestValue: 350).nextInt(), y: GKRandomDistribution(lowestValue: 100, highestValue: 200).nextInt() + Int(player.position.y))
         platform.zPosition = 5
         platform.physicsBody = SKPhysicsBody(rectangleOf: platform.size)
         platform.physicsBody?.isDynamic = false
@@ -201,7 +201,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
     
     func makePlatform2(){
         let platform = SKSpriteNode(imageNamed: "Rectangle")
-        platform.position = CGPoint(x: GKRandomDistribution(lowestValue: 70, highestValue: 350).nextInt(), y: GKRandomDistribution(lowestValue: 300, highestValue: 400).nextInt() + Int(player.position.y))
+        platform.position = CGPoint(x: GKRandomDistribution(lowestValue: 70, highestValue: 350).nextInt(), y: GKRandomDistribution(lowestValue: 250, highestValue: 350).nextInt() + Int(player.position.y))
         platform.zPosition = 5
         platform.physicsBody = SKPhysicsBody(rectangleOf: platform.size)
         platform.physicsBody?.isDynamic = false
@@ -215,7 +215,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
     
     func makePlatform3(){
         let platform = SKSpriteNode(imageNamed: "Rectangle")
-        platform.position = CGPoint(x: GKRandomDistribution(lowestValue: 70, highestValue: 350).nextInt(), y: GKRandomDistribution(lowestValue: 500, highestValue: 600).nextInt() + Int(player.position.y))
+        platform.position = CGPoint(x: GKRandomDistribution(lowestValue: 70, highestValue: 350).nextInt(), y: GKRandomDistribution(lowestValue: 400, highestValue: 500).nextInt() + Int(player.position.y))
         platform.zPosition = 5
         platform.physicsBody = SKPhysicsBody(rectangleOf: platform.size)
         platform.physicsBody?.isDynamic = false
@@ -229,7 +229,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
     
     func makePlatform4(){
         let platform = SKSpriteNode(imageNamed: "Rectangle")
-        platform.position = CGPoint(x: GKRandomDistribution(lowestValue: 70, highestValue: 350).nextInt(), y: GKRandomDistribution(lowestValue: 700, highestValue: 800).nextInt() + Int(player.position.y))
+        platform.position = CGPoint(x: GKRandomDistribution(lowestValue: 70, highestValue: 350).nextInt(), y: GKRandomDistribution(lowestValue: 550, highestValue: 650).nextInt() + Int(player.position.y))
         platform.zPosition = 5
         platform.physicsBody = SKPhysicsBody(rectangleOf: platform.size)
         platform.physicsBody?.isDynamic = false
@@ -243,7 +243,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
     
     func makePlatform5(){
         let platform = SKSpriteNode(imageNamed: "Rectangle")
-        platform.position = CGPoint(x: GKRandomDistribution(lowestValue: 70, highestValue: 350).nextInt(), y: GKRandomDistribution(lowestValue: 900, highestValue: 1000).nextInt() + Int(player.position.y))
+        platform.position = CGPoint(x: GKRandomDistribution(lowestValue: 70, highestValue: 350).nextInt(), y: GKRandomDistribution(lowestValue: 700, highestValue: 800).nextInt() + Int(player.position.y))
         platform.zPosition = 5
         platform.physicsBody = SKPhysicsBody(rectangleOf: platform.size)
         platform.physicsBody?.isDynamic = false
@@ -257,7 +257,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
     
     func makePlatform6(){
         let platform = SKSpriteNode(imageNamed: "Rectangle")
-        platform.position = CGPoint(x: GKRandomDistribution(lowestValue: 70, highestValue: 350).nextInt(), y: GKRandomDistribution(lowestValue: 1100, highestValue: 1200).nextInt() + Int(player.position.y))
+        platform.position = CGPoint(x: GKRandomDistribution(lowestValue: 70, highestValue: 350).nextInt(), y: GKRandomDistribution(lowestValue: 850, highestValue: 950).nextInt() + Int(player.position.y))
         platform.zPosition = 5
         platform.physicsBody = SKPhysicsBody(rectangleOf: platform.size)
         platform.physicsBody?.isDynamic = false
@@ -271,7 +271,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
     
     func makePlatform7(){
         let platform = SKSpriteNode(imageNamed: "Rectangle")
-        platform.position = CGPoint(x: GKRandomDistribution(lowestValue: 70, highestValue: 350).nextInt(), y: GKRandomDistribution(lowestValue: 800, highestValue: 900).nextInt() + Int(player.position.y))
+        platform.position = CGPoint(x: GKRandomDistribution(lowestValue: 70, highestValue: 350).nextInt(), y: GKRandomDistribution(lowestValue: 800, highestValue: 850).nextInt() + Int(player.position.y))
         platform.zPosition = 5
         platform.physicsBody = SKPhysicsBody(rectangleOf: platform.size)
         platform.physicsBody?.isDynamic = false

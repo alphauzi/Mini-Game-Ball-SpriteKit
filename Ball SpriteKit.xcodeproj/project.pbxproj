@@ -12,12 +12,12 @@
 		A14E82012AA20DDC0004F046 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A14E82002AA20DDC0004F046 /* Assets.xcassets */; };
 		A14E82042AA20DDC0004F046 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A14E82032AA20DDC0004F046 /* Preview Assets.xcassets */; };
 		A14E820A2AA20DDC0004F046 /* Ball SpriteKit Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A14E82092AA20DDC0004F046 /* Ball SpriteKit Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		A14E820F2AA20DDC0004F046 /* Ball_SpriteKitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14E820E2AA20DDC0004F046 /* Ball_SpriteKitApp.swift */; };
-		A14E82112AA20DDC0004F046 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14E82102AA20DDC0004F046 /* ContentView.swift */; };
-		A14E82132AA20DDD0004F046 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A14E82122AA20DDD0004F046 /* Assets.xcassets */; };
 		A14E82162AA20DDD0004F046 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A14E82152AA20DDD0004F046 /* Preview Assets.xcassets */; };
-		A14E82232AA20EB70004F046 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14E82222AA20EB70004F046 /* GameScene.swift */; };
 		A14E82292AA72A000004F046 /* StartScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = A14E82282AA72A000004F046 /* StartScene.sks */; };
+		A1729CFB2AB5D6870091D865 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A14E82122AA20DDD0004F046 /* Assets.xcassets */; };
+		A1729CFC2AB5D68A0091D865 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14E82222AA20EB70004F046 /* GameScene.swift */; };
+		A1729CFD2AB5D68E0091D865 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14E82102AA20DDC0004F046 /* ContentView.swift */; };
+		A1729CFE2AB5D6900091D865 /* Ball_SpriteKitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14E820E2AA20DDC0004F046 /* Ball_SpriteKitApp.swift */; };
 		A1EEE5A12AAFB74100E1E572 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EEE5A02AAFB74100E1E572 /* GameOverScene.swift */; };
 		A1FFD6C72AA9FB2000D28B72 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FFD6C62AA9FB2000D28B72 /* GameScene.swift */; };
 /* End PBXBuildFile section */
@@ -232,8 +232,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1729CFB2AB5D6870091D865 /* Assets.xcassets in Resources */,
 				A14E82162AA20DDD0004F046 /* Preview Assets.xcassets in Resources */,
-				A14E82132AA20DDD0004F046 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,9 +255,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A14E82232AA20EB70004F046 /* GameScene.swift in Sources */,
-				A14E82112AA20DDC0004F046 /* ContentView.swift in Sources */,
-				A14E820F2AA20DDC0004F046 /* Ball_SpriteKitApp.swift in Sources */,
+				A1729CFE2AB5D6900091D865 /* Ball_SpriteKitApp.swift in Sources */,
+				A1729CFD2AB5D68E0091D865 /* ContentView.swift in Sources */,
+				A1729CFC2AB5D68A0091D865 /* GameScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,9 +392,12 @@
 				DEVELOPMENT_TEAM = VW59CHPRG8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Ball-SpriteKit-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Ball SpriteKit";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.alphauzi.Ball-SpriteKit";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = NO;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -422,9 +425,12 @@
 				DEVELOPMENT_TEAM = VW59CHPRG8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Ball-SpriteKit-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Ball SpriteKit";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.alphauzi.Ball-SpriteKit";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = NO;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
