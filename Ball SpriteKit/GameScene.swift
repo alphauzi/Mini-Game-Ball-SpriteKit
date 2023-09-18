@@ -75,7 +75,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
         gameOverLine.physicsBody?.contactTestBitMask = bitMasks.platform.rawValue | bitMasks.player.rawValue
         addChild(gameOverLine)
         
-        scoreLabel.position.x = 75
+        scoreLabel.position.x = size.width - 320
+//        scoreLabel.position.x = 75
         scoreLabel.zPosition = 20
         scoreLabel.attributedText = NSAttributedString(string: "Score: \(score)", attributes: [.font: UIFont.systemFont(ofSize: 25, weight: .regular)])
         scoreLabel.fontColor = .black
@@ -84,7 +85,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
         addChild(scoreLabel)
         
         bestScore = defaults.integer(forKey: "best score")
-        bestScoreLabel.position.x = 280
+        bestScoreLabel.position.x = size.width - 110
+//        bestScoreLabel.position.x = 280
         bestScoreLabel.zPosition = 20
         //        bestScoreLabel.text = "Best Score: \(bestScore)"
         bestScoreLabel.fontColor = .black
@@ -131,8 +133,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
             player.position.x = max(minX, min(player.position.x, maxX))
         }
         
-        scoreLabel.position.y = player.position.y + 500
-        bestScoreLabel.position.y = player.position.y + 500
+        scoreLabel.position.y = player.position.y + 600
+        bestScoreLabel.position.y = player.position.y + 600
+        
+//        scoreLabel.position.y = size.height - 50
+//        bestScoreLabel.position.y = size.height - 50
     }
     
     func didBegin(_ contact: SKPhysicsContact) {
