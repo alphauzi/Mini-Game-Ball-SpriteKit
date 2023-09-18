@@ -393,7 +393,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Ball-SpriteKit-Watch-App-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Ball SpriteKit";
+				INFOPLIST_KEY_CFBundleDisplayName = "Bouncing Ball";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.alphauzi.Ball-SpriteKit";
@@ -426,7 +426,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Ball-SpriteKit-Watch-App-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Ball SpriteKit";
+				INFOPLIST_KEY_CFBundleDisplayName = "Bouncing Ball";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.alphauzi.Ball-SpriteKit";
@@ -460,7 +460,7 @@
 				DEVELOPMENT_TEAM = VW59CHPRG8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Ball SpriteKit";
+				INFOPLIST_KEY_CFBundleDisplayName = "Bouncing Ball";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -493,7 +493,7 @@
 				DEVELOPMENT_TEAM = VW59CHPRG8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Ball SpriteKit";
+				INFOPLIST_KEY_CFBundleDisplayName = "Bouncing Ball";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -158,6 +158,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
                 //                makePlatform5()
                 //                makePlatform6()
                 makePlatform7()
+                makePlatform8()
                 addScore()
             }
         }
@@ -272,6 +273,20 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
     func makePlatform7(){
         let platform = SKSpriteNode(imageNamed: "Rectangle")
         platform.position = CGPoint(x: GKRandomDistribution(lowestValue: 70, highestValue: 350).nextInt(), y: GKRandomDistribution(lowestValue: 800, highestValue: 850).nextInt() + Int(player.position.y))
+        platform.zPosition = 5
+        platform.physicsBody = SKPhysicsBody(rectangleOf: platform.size)
+        platform.physicsBody?.isDynamic = false
+        platform.physicsBody?.allowsRotation = false
+        platform.physicsBody?.affectedByGravity = false
+        platform.physicsBody?.categoryBitMask = bitMasks.platform.rawValue
+        platform.physicsBody?.collisionBitMask = 0
+        platform.physicsBody?.contactTestBitMask = bitMasks.player.rawValue
+        addChild(platform)
+    }
+        
+    func makePlatform8(){
+        let platform = SKSpriteNode(imageNamed: "Rectangle")
+        platform.position = CGPoint(x: GKRandomDistribution(lowestValue: 70, highestValue: 350).nextInt(), y: GKRandomDistribution(lowestValue: 650, highestValue: 700).nextInt() + Int(player.position.y))
         platform.zPosition = 5
         platform.physicsBody = SKPhysicsBody(rectangleOf: platform.size)
         platform.physicsBody?.isDynamic = false
